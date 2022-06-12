@@ -1,3 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -14,3 +19,56 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.paginationBttn{
+  @apply flex list-none justify-center
+}
+
+/* .paginationBttn a{
+  @apply p-6 m-2 rounded-full bg-red-500 text-cyan-50
+} */
+.pagination{
+  @apply  text-gray-500 rounded-none m-2 flex justify-center items-center text-center
+}
+
+.pagination .page-num a{
+  @apply  m-2  border-solid border-2 border-indigo-600 rounded-full font-light text-xs py-2 px-3
+}
+
+
+
+
+.pagination .active{
+  @apply bg-red-800 text-white
+}
+
+/* .paginationActive a:hover{
+  @apply bg-blue-800 text-red-900
+} */
+
+
+
+/* .paginationBttn{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.paginationBttn a{
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  color: #000;
+  cursor: pointer;
+}
+
+.paginationBttn a:hover{
+  color: white;
+  background-color: blue;
+}
+
+.paginationActive a{
+  color: white;
+  background-color: blue;
+} */
