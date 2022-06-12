@@ -115,13 +115,6 @@ export default function Home({ data }) {
                   </Link>
                 );
               })}
-            <div>
-              {searchPost && blog?.length === 0 && (
-                <div>
-                  <h1>No data is available</h1>
-                </div>
-              )}
-            </div>
           </div>
           <br />
           <br />
